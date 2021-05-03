@@ -1,0 +1,23 @@
+GET {{api}}/todos
+Content-Type: application/json
+
+###
+POST {{api}}/todos
+Content-Type: application/json
+
+{
+  "title": "tasting spring rest",
+  "completed": true
+}
+
+###
+PATCH {{api}}/todos/2
+Content-Type: application/json
+
+{
+  "completed": false
+}
+
+###
+GET {{api}}/todos/search/title?keyword=over
+Content-Type: application/json
